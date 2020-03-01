@@ -1,0 +1,19 @@
+{
+	"name": "SQL to BLOB Load",
+	"properties": {
+		"description": "Loads data from SQL to BLOB",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2020-03-01T05:04:00.000Z",
+				"endTime": "2020-03-02T05:04:00.000Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
