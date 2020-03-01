@@ -1,0 +1,10 @@
+{
+	"name": "Blob_testKey",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://BlobsqlserverJSONLoad.vault.azure.net/"
+		}
+	}
+}
