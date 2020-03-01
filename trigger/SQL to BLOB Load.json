@@ -3,8 +3,15 @@
 	"properties": {
 		"description": "Loads data from SQL to BLOB",
 		"annotations": [],
-		"runtimeState": "Stopped",
-		"pipelines": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Copy data from on premise SQL Server to SQL Azure",
+					"type": "PipelineReference"
+				}
+			}
+		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
