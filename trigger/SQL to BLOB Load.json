@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "Loads data from SQL to BLOB",
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
