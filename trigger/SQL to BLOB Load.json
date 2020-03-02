@@ -18,7 +18,7 @@
 				"frequency": "Minute",
 				"interval": 15,
 				"startTime": "2020-03-01T01:04:00.000Z",
-				"endTime": "2020-03-02T05:04:00.000Z",
+				"endTime": "2020-03-05T05:04:00.000Z",
 				"timeZone": "UTC"
 			}
 		}
