@@ -1,0 +1,19 @@
+{
+	"name": "ADLGen2_LinkedSer",
+	"properties": {
+		"description": "Linked service",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://ckblob.dfs.core.windows.net/",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ADLGen2",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "ADLGen2Key"
+			}
+		}
+	}
+}
