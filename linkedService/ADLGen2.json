@@ -1,0 +1,11 @@
+{
+	"name": "ADLGen2",
+	"properties": {
+		"description": "Azure Key vault for ADL gen 2",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://ADLGen2-Keyvault.vault.azure.net/"
+		}
+	}
+}
