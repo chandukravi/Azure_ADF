@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "Load-ADL2-SQLDB"
+		},
+		"ADLGen2_LinkedSer_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_connectionString": {
+			"value": ""
+		},
+		"ADLGen2_properties_typeProperties_baseUrl": {
+			"value": "https://ADLGen2-Keyvault.vault.azure.net/"
+		},
+		"ADLGen2_KeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://ADLGen2-Keyvault.vault.azure.net/"
+		},
+		"ADLGen2_LinkedSer_properties_typeProperties_url": {
+			"value": "https://ckblob.dfs.core.windows.net"
+		}
+	}
+}
