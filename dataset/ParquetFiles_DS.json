@@ -1,0 +1,19 @@
+{
+	"name": "ParquetFiles_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLGen2_LinkedSer",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "chandufiles"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
