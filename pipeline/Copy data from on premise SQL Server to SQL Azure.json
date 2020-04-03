@@ -4,7 +4,7 @@
 		"description": "Copy data from on premise SQL Server to SQL Azure.\n\nYou can also go to \"Copy Data Tool\" to get the pipeline for more connectors and scenarios.",
 		"activities": [
 			{
-				"name": "dataflow1",
+				"name": "Load_ParquetFiles",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
@@ -17,7 +17,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "dataflow1",
+						"referenceName": "LoadParquetFilesToSQLDB",
 						"type": "DataFlowReference"
 					},
 					"compute": {
