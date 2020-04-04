@@ -1,7 +1,7 @@
 {
-	"name": "Copy data from on premise SQL Server to SQL Azure_copy1",
+	"name": "Load_CSVFiles_Sequential_SQLDB",
 	"properties": {
-		"description": "Copy data from on premise SQL Server to SQL Azure.\n\nYou can also go to \"Copy Data Tool\" to get the pipeline for more connectors and scenarios.",
+		"description": "Copy  .CSV files from ADL to SQLDB;\n\nload the files in sequential using while loop;",
 		"activities": [
 			{
 				"name": "Load_ParquetFiles",
