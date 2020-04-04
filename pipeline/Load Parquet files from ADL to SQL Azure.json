@@ -1,7 +1,7 @@
 {
-	"name": "Copy data from on premise SQL Server to SQL Azure",
+	"name": "Load Parquet files from ADL to SQL Azure",
 	"properties": {
-		"description": "Copy data from on premise SQL Server to SQL Azure.\n\nYou can also go to \"Copy Data Tool\" to get the pipeline for more connectors and scenarios.",
+		"description": "Load Parquet files from ADL to SQL Azure\n\nLogic used union of two files and loading into SQLDB\n",
 		"activities": [
 			{
 				"name": "Load_ParquetFiles",
