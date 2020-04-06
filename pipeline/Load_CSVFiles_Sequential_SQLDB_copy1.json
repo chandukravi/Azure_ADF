@@ -1,5 +1,5 @@
 {
-	"name": "Load_CSVFiles_Sequential_SQLDB",
+	"name": "Load_CSVFiles_Sequential_SQLDB_copy1",
 	"properties": {
 		"description": "Copy  .CSV files from ADL to SQLDB;\n\nload the files in sequential using while loop;",
 		"activities": [
@@ -36,11 +36,18 @@
 			{
 				"name": "Loop Files",
 				"type": "ForEach",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Read Files",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@split('userdata1.parquet,userdata2.parquet', ',')",
+						"value": "@activity('Read Files').output.childitems",
 						"type": "Expression"
 					},
 					"isSequential": true,
@@ -132,6 +139,34 @@
 							}
 						}
 					]
+				}
+			},
+			{
+				"name": "Read Files",
+				"description": "Reads all the file names from source",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "DS_Source",
+						"type": "DatasetReference"
+					},
+					"fieldList": [
+						"exists",
+						"childItems"
+					],
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true
+					}
 				}
 			}
 		],
